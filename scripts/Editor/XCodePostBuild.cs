@@ -41,7 +41,7 @@ public static class XcodePostBuild
     /// </summary>
     private const string TouchedMarker = "https://github.com/snowballdigital/flutter-unity-view-widget";
 
-    [PostProcessBuild]
+    [PostProcessBuild(0)]
     public static void OnPostBuild(BuildTarget target, string pathToBuiltProject)
     {
         if (target != BuildTarget.iOS)
